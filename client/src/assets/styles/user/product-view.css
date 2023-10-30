@@ -1,0 +1,23 @@
+.product-view_container {
+    margin: 66px 101px;
+}
+
+.product-view_body {
+    margin-top: 86px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+.product-view_title {
+    margin-top: 101px;
+}
+
+.product-img {
+    max-height: 600px;
+    min-width: 200px;
+    width: 100%;
+}
+
+.product-infomation{
+    margin-left: 16px;
+}

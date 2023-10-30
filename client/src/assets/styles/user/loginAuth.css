@@ -1,0 +1,75 @@
+.form-main {
+    background-image: url("https://media.canifa.com/mageplaza/blog/post/2023/04/phong-cach-thoi-trang-vintage-5-1-1360x907.webp");
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.form-container {
+    margin: auto auto;
+    min-height: 300px;
+    min-width: 450px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    border-radius: 4px;
+}
+.form_title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin: 12px;
+}
+.input_items {
+    margin: 12px 0; 
+    text-align: center;
+}
+.input_style {
+    border-radius: 8px;
+    outline: none;
+    padding: 8px;
+    width: 80%;
+    border-bottom: 1px solid blue;
+}
+.form_btn {
+    margin: 24px 12px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.form_btn-item {
+   font-size: 18px;
+   font-weight: 400;
+   padding: 4px 8px;
+   border-radius: 4px;
+   border-bottom: 2px solid blue;
+}
+.form_btn-item:hover {
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+   animation: hover_btn-form 0.5s linear;
+}
+
+.form_change {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.form_change-btn {
+    font-size: 14px;
+    color: blue;
+}
+.form_change-btn:hover {
+    opacity: 0.7;
+}
+@keyframes hover_btn-form {
+    to {
+        box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+    }
+    from {
+       box-shadow: 0 0 5px cyan, 0 0 25px cyan,
+       0 0 100px cyan, 0 0 200px cyan;
+       background-color: cyan;
+    }
+}

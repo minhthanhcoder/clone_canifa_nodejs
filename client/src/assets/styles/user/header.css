@@ -1,0 +1,21 @@
+.user-profile {
+    position: relative;
+}
+.user-profile-list {
+    position: absolute;
+    background-color: #fff;
+    top: 28px;
+    min-height: 200px;
+    width: 300px;
+    right: 18px;
+    border-radius: 8px;
+    display: none;
+}
+.user-profile-list li {
+    margin: 4px;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+.user-profile:hover .user-profile-list {
+display: block;
+}
