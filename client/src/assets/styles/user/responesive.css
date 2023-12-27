@@ -1,0 +1,43 @@
+/* pc */
+@media (min-width:64em) {
+   
+}
+/* tablet and pc */
+@media (min-width:46.25em) {
+    .menu-btn-container{
+        display: none;
+    }
+}
+/* tablet & mobile */
+@media (min-width:46.25em)and (max-width:63.9375em), (max-width:739px) {
+
+}
+
+/* tablet */
+@media (min-width:46.25em)and (max-width:63.9375em) {
+    
+}
+/* mobile */
+@media (max-width:46.1875em) {
+    .search-container {
+        display: none !important
+    }
+    .navigate-login {
+        display: none !important
+    }
+    /* Menu btn */
+    .menu-btn-container{
+        display: block;
+        margin: 0 8px;
+        padding: 4px;
+        font-size: 1.4rem;
+    }
+    .list-products_items {
+        border-bottom: 2px solid rgb(158, 153, 153);
+        padding: 4px;
+    }
+    .footer-about {
+        display: none;
+    }
+    }
+    

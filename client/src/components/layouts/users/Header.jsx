@@ -13,31 +13,53 @@ function Header() {
   }
    
   const [modal, setModal] = useState(false)
+  const [modalMenu, setModalMenu] = useState(false)
+  console.log(modalMenu);
   
   const handleToggleModal = ()=> {
     setModal(!modal)
   }
 
+  const handleToggleModalMenu = ()=> {
+    setModalMenu(!modalMenu)
+  }
   return (
     <>
-     <header className='flex justify-between bg-white shadow h-14 text-center items-center fixed top-0 left-0 right-0 z-10'>
+     <header className='flex justify-between bg-white shadow h-14 text-center items-center fixed top-0 left-0 right-0 z-10 header-container'>
      <Link to={"/"}>
      <div className='cursor-pointer'><img src="https://canifa.com/assets/images/logo.svg" alt="logo" /></div>
      </Link>
-      <div className='bg-zinc-50 rounded-md h-8 flex items-center border border-red-500 ' >
+      <div className='bg-zinc-50 rounded-md h-8 flex items-center border border-red-500 search-container ' >
         <input className='outline-none  rounded-md px-2' type="text" />
         <span><i className="text-red-700 px-2 cursor-pointer fa-solid fa-magnifying-glass"></i></span>
       </div>
       <div className='flex justify-between items-center'>
+      {/* cart */}
         <div onClick={()=>handleToggleModal()} className='relative'><i className="bg-transparent text-red-700 font-semibold cursor-pointer hover:opacity-50 py-2 px-4 border border-red-500 hover:border-transparent rounded fa-solid fa-cart-shopping mx-2 "></i>
         <div className='rounded-full bg-red-700 w-6 text-white absolute -top-2 -left-1'>1</div>
         </div>
-        
+        {/* notification */}
         <div className='relative'><i className="bg-transparent text-red-700 font-semibold cursor-pointer hover:opacity-50 py-2 px-4 border border-red-500 hover:border-transparent rounded fa-solid fa-bell mx-2"></i>
         <div className='rounded-full bg-red-700 w-6 -top-2 -left-1 text-white absolute'>0</div>
         </div>
+        {/* @mobile  screen*/}
+        <div className='menu-btn-container'>
+        <div onClick={()=>handleToggleModalMenu()} className='menu-btn-icon'>
+        <i className="fa-solid fa-bars"></i>
+        </div>
+        {modalMenu? <div onClick={handleToggleModalMenu} className='fixed top-0 right-0 left-0 bottom-0 bg-slate-500 backdrop-blur-sm bg-opacity-30 z-10 flex justify-end items-start '>
+          <ul onClick={(e)=>e.stopPropagation()} className='menu-navigate'>
+          <Link to={"/login"}>
+          <li className='bg-transparent hover:opacity-50 text-red-700 font-semibold  py-2 px-4 border border-red-500 hover:border-transparent rounded m-2'>Đăng Nhập</li>
+          </Link>
+          <Link to={"/login"}>
+          <li className='bg-transparent hover:opacity-50 text-red-700 font-semibold  py-2 px-4 border border-red-500 hover:border-transparent rounded m-2'>Đăng Ký</li>
+          </Link>
+          </ul>
+        <div/> </div> : null}
+        </div>
       {isLogin === null ? <>
-        <div className='flex justify-center items-center mx-2'>
+        <div className='flex justify-center items-center mx-2 navigate-login'>
             <Link to={"/login"}>
             <button 
             className='bg-transparent text-red-700 font-semibold  py-2 px-4 border border-red-500 hover:border-transparent rounded mx-2'>

@@ -4,7 +4,7 @@
 
 .product-view_body {
     margin-top: 86px;
-    height: 600px;
+    height: 800px;
     display: flex;
     justify-content: center;
 }
@@ -14,7 +14,11 @@
 
 .product-img {
     max-height: 600px;
-    min-width: 200px;
+    width: auto;
+}
+
+img .product-img {
+    height: auto;
     width: 100%;
 }
 

@@ -47,12 +47,14 @@ function Login() {
              </h3>
              <div className="mt-2">
                <ul>
+                {/* login with email*/}
                  <Link to = {"/login-auth"}>
                  <li className='flex my-4 p-3 hover:bg-red-500 hover:text-white rounded-lg shadow-md'>
                    <span className='h-8 mx-6' ><i  className="fa-regular fa-user"></i></span>
-                   Sử dụng Số điện thoại / Email</li>
+                  Đăng nhập bằng Email</li>
                  </Link>
 
+                 {/* login with facebook */}
                 <Link to = {"/"}>
                 <li className='flex my-4 p-3 hover:bg-red-500 hover:text-white rounded-lg shadow-md'>
                    <span>
@@ -64,11 +66,12 @@ function Login() {
                    Tiếp tục với Facebook</li>
                 </Link>
 
+                {/* login with google */}
                <Link to={"/"}>
                <li onClick={handleLoginByGoogle} className='flex my-4 p-3 hover:bg-red-500 hover:text-white rounded-lg shadow-md'>
                    <span><img  
                    className='h-8 mx-4' 
-                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png" 
+                   src="https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png" 
                    alt="logo" />
                    </span>
                    Tiếp tục với Google</li>

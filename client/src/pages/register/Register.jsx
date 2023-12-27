@@ -7,10 +7,10 @@ function Register() {
     const [password, setPassword] = useState("")
     const [rePassword, setRePassword] = useState("")
     const handleRegister = (e) => {
-      e.preventDefault()
+      e.preventDefault();
       
     }
-    console.log(password);
+    
     const [passErr,setPassErr] = useState("")
     const [rePassErr,setRePassErr] = useState("")
     const [emailErrMsg,setEmailErrMsg] = useState("")
@@ -83,8 +83,8 @@ function Register() {
               </div>
 
               <div className='form_btn'>
-                <Link to={"/"}> <button className='form_btn-item'>Quay lại</button></Link>
-                 <button className='form_btn-item' type='submit'>Xác nhận</button>
+                <Link to={"/"}> <button className='form_btn-item form_cancel_btn'>Quay lại</button></Link>
+                 <button className='form_btn-item form_login_btn' type='submit'>Xác nhận</button>
               </div>
               <div className='form_change'>Bạn đã có tài khoản, <Link to={"/login-auth"}>
                   <button className='form_change-btn'>Đăng nhập ngay</button>

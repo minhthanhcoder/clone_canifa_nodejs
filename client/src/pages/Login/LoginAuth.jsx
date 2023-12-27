@@ -17,8 +17,8 @@ function LoginAuth() {
                     </div>
     
                     <div className='form_btn'>
-                      <Link to={"/"}> <button className='form_btn-item'>Quay lại</button></Link>
-                       <button  className='form_btn-item' type='submit'>Xác nhận</button>
+                      <Link to={"/"}> <button className='form_btn-item form_cancel_btn '>Quay lại</button></Link>
+                       <button  className='form_btn-item form_login_btn' type='submit'>Xác nhận</button>
                     </div>
                     <div className='form_change'>Bạn chưa có tài khoản, <Link to={"/register"}>
                         <button className='form_change-btn'>Đăng ký ngay</button>

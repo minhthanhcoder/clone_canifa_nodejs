@@ -28,7 +28,7 @@
     outline: none;
     padding: 8px;
     width: 80%;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid rgb(255, 183, 0);
 }
 .form_btn {
     margin: 24px 12px;
@@ -42,12 +42,26 @@
    font-weight: 400;
    padding: 4px 8px;
    border-radius: 4px;
-   border-bottom: 2px solid blue;
+   
 }
-.form_btn-item:hover {
-    background-color: cyan;
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+.form_cancel_btn:hover {
+    background-color: rgb(255, 183, 0);
+    box-shadow: 0 0 5px rgb(255, 183, 0), 0 0 25px rgb(255, 183, 0);
    animation: hover_btn-form 0.5s linear;
+}
+
+.form_login_btn:hover {
+    box-shadow: 0 0 5px rgb(255, 183, 0), 0 0 25px rgb(255, 183, 0);
+   animation: hover_login_btn-form 0.5s linear;
+}
+
+.form_login_btn {
+    background-color: rgb(68, 205, 50) !important;
+    color: #fff;
+}
+.form_cancel_btn {
+    background-color: rgb(255, 68, 0);
+    color: #fff;
 }
 
 .form_change {
@@ -65,11 +79,22 @@
 }
 @keyframes hover_btn-form {
     to {
-        box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+        box-shadow: 0 0 5px rgb(255, 183, 0), 0 0 25px rgb(255, 183, 0);
     }
     from {
-       box-shadow: 0 0 5px cyan, 0 0 25px cyan,
-       0 0 100px cyan, 0 0 200px cyan;
-       background-color: cyan;
+       box-shadow: 0 0 5px rgb(255, 183, 0), 0 0 25px rgb(255, 183, 0),
+       0 0 100px rgb(255, 183, 0), 0 0 200px rgb(255, 183, 0);
+       background-color: rgb(255, 183, 0);
+    }
+}
+
+@keyframes hover_login_btn-form {
+    to {
+        box-shadow: 0 0 5px rgb(68, 205, 50), 0 0 25px rgb(68, 205, 50);
+    }
+    from {
+       box-shadow: 0 0 5px rgb(68, 205, 50), 0 0 25px rgb(68, 205, 50),
+       0 0 100px rgb(68, 205, 50), 0 0 200px rgb(68, 205, 50);
+       background-color: rgb(68, 205, 50);
     }
 }
